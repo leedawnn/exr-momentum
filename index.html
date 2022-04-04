@@ -16,6 +16,7 @@
           type="text"
           name="id"
           placeholder="아이디를 입력해주세요"
+          required
         />
       </label>
       <label for="password">
@@ -25,12 +26,17 @@
           type="password"
           name="password"
           placeholder="비밀번호를 입력해주세요"
+          required
         />
       </label>
       <button type="submit">로그인</button>
     </form>
     <h2 id="clock">00:00:00</h2>
     <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form">
+      <input type="text" placeholder="할 일을 입력해주세요" required />
+    </form>
+    <ul id="todo-list"></ul>
     <div id="quotes">
       <span></span>
       <span></span>
@@ -40,4 +46,5 @@
   <script src="src/clock.js"></script>
   <script src="src/quotes.js"></script>
   <script src="src/background.js"></script>
+  <script src="src/todo.js"></script>
 </html>
