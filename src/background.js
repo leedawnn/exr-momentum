@@ -11,6 +11,7 @@ const images = [
 const randomImage = images[Math.floor(Math.random() * images.length)];
 
 const bgImage = document.createElement('img');
+bgImage.classList.add('bgImage');
 bgImage.src = `assets/${randomImage}`;
 
 document.body.appendChild(bgImage);
